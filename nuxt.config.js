@@ -55,6 +55,6 @@ export default {
   },
 
   router: {
-    base: process.env.SUBDIR ? process.env.SUBDIR : process.env.BASE_URL
+    base: process.env.SUBDIR ? process.env.SUBDIR : process.env.BASE_URL,
   },
 }
