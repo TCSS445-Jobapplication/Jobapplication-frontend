@@ -1,0 +1,106 @@
+:root {
+  --header-background: #4b2e83;
+  --header-links-color: #cbbde2;
+  --header-links-hover-color: white;
+  --h-color: #4b2e83;
+  --links-hover-color: #9e83d4;
+  --border-color: #EBEBEB;
+  --label-color: #886bc1;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+header {
+  display: flow;
+  position: sticky;
+  height: 5em;
+  background-color: var(--header-background);
+  padding: 1em;
+}
+
+header a {
+  color: var(--header-links-color);
+  padding: 1.5em;
+  font-size: larger;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: var(--header-links-hover-color);
+}
+
+footer {
+  background-color: var(--header-background);
+  height: 4em;
+  text-align: center;
+}
+
+footer .copyright {
+  display: block;
+  margin-top: 0.5em;
+  color: var(--header-links-color);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--h-color);
+  border-bottom: 0.1em solid #EBEBEB;
+}
+
+a {
+  color: var(--h-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--links-hover-color);
+}
+
+main {
+  min-height: 87vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0.1em 0px 0px 0px;
+  padding: 0px 0.1em 0px 0.1em;
+}
+
+ul li {
+  height: 2em;
+  border-bottom: 0.1em solid var(--border-color);
+}
+
+ul li a {
+  display: block;
+  padding-left: 0.2em;
+  padding-top: 0.3em;
+}
+
+label {
+  color: var(--label-color);
+  margin: 0.4em 0px 0px 0px;
+}
+
+.main-page {
+  min-height: 100vh;
+}
+
+.aside {
+  position: sticky;
+  border-right: 0.1em solid var(--border-color);
+  min-height: 80vh;
+}
+
+.child-module {
+  padding: 0.2em;
+}
+
+.btn-secondary {
+  background-color: var(--h-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--links-hover-color);
+}
