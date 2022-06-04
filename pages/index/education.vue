@@ -75,7 +75,7 @@
               v-model="newEducation.to"
               class="mb-2"
               placeholder="To"
-              required>
+              >
             </b-form-datepicker>
           </b-form-group>
         </b-col>
@@ -178,7 +178,7 @@
                 v-model="education.to"
                 class="mb-2"
                 placeholder="To"
-                required>
+                >
               </b-form-datepicker>
             </b-form-group>
           </b-col>
@@ -199,8 +199,8 @@
         <b-form-row>
           <b-col cols="12">
             <b-form-group>
-              <b-button :id="'link-action-save-butt' + index" @click="update(education)" type="button">Save</b-button>
-              <b-button :id="'link-action-del-butt' + index" @click="remove(education.id, index)" type="button" variant="danger">Delete</b-button>
+              <b-button :id="'education-action-save-butt' + index" @click="update(education)" type="button">Save</b-button>
+              <b-button :id="'education-action-del-butt' + index" @click="remove(education.id, index)" type="button" variant="danger">Delete</b-button>
             </b-form-group>
           </b-col>
         </b-form-row>
