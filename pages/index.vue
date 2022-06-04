@@ -4,7 +4,7 @@
       <div class="col-2 aside">
         <ul>
           <li>
-            <nuxt-link to="/contact">Contact information</nuxt-link>
+            <nuxt-link to="/profile">Contact information</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/links">Links</nuxt-link>
@@ -27,7 +27,7 @@
         </ul>
       </div>
       <div class="col-10">
-        <nuxt-child :user-id="1"></nuxt-child>
+        <nuxt-child :profile-id="1"></nuxt-child>
       </div>
     </div>
   </main>

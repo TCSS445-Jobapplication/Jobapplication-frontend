@@ -25,7 +25,7 @@
           >
             <b-form-input
               id="link-tx"
-              v-model="newLink.link"
+              v-model="newLink.url"
               placeholder="Link"
               required
             />
@@ -56,7 +56,7 @@
           <b-form-group>
             <b-form-input
               :id="'link-tx' + index"
-              v-model="link.link"
+              v-model="link.url"
               placeholder="Link"
               required
             />
@@ -78,24 +78,24 @@
 import axios from '~/plugins/axios';
 export  default {
   layout: 'default',
-  props: ['userId'],
+  props: ['profileId'],
   data() {
     return {
       newLink: {
         name: '',
-        link: ''
+        url: ''
       },
       links: []
     }
   },
   created() {
     axios
-      .get('/links/user/' + this.userId)
+      .get('/links/profile/' + this.profileId)
       .then(response => (this.links = response.data));
   },
   methods: {
     insert() {
-      this.newLink.userId = this.userId;
+      this.newLink.profileId = this.profileId;
       axios
         .post('/links', this.newLink)
         .then(response => {
@@ -104,7 +104,7 @@ export  default {
         });
     },
     update(link) {
-      link.userId = this.userId;
+      link.profileId = this.profileId;
       axios
         .put('links/' + link.id, link)
         .then(response => {});
