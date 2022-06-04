@@ -1,40 +1,17 @@
 <template>
   <main class="container-fluid">
-    <div class="row">
-      <div class="col-2 aside">
-        <ul>
-          <li>
-            <nuxt-link to="/profile">Contact information</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/links">Links</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/education">Education</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/coursework">Coursework</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/projects">Projects</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/experience">Experience</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/skills">Skills</nuxt-link>
-          </li>
-        </ul>
-      </div>
-      <div class="col-10">
-        <nuxt-child :profile-id="1"></nuxt-child>
-      </div>
-    </div>
+    <b-row>
+      <b-col>
+        <nuxt-link to="/profile?id=1">
+          <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+        </nuxt-link>
+      </b-col>
+      <b-col>
+        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+      </b-col>
+      <b-col>
+        <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      </b-col>
+    </b-row>
   </main>
 </template>
-
-<script>
-export  default {
-  layout: 'default'
-}
-</script>

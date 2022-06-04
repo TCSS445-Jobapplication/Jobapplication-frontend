@@ -1,7 +1,20 @@
 <template>
   <main class="container-fluid">
-    <aside class="col-2">Menu here</aside>
-    <div class="col-10">Content here</div>
+    <div class="row">
+      <div class="col-2 aside">
+        <ul>
+          <li>
+            <nuxt-link to="/jobs/applying">Applying</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/jobs/stats">Stats</nuxt-link>
+          </li>
+        </ul>
+      </div>
+      <div class="col-10">
+        <nuxt-child :profile-id="1"></nuxt-child>
+      </div>
+    </div>
   </main>
 </template>
 
