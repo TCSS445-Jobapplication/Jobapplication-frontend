@@ -7,7 +7,7 @@
             <img src="~/assets/images/logo.png" class="img-thumbnail" width="50em"/>
           </nuxt-link>
           <nuxt-link to="/">My Profile</nuxt-link>
-          <nuxt-link to="/jobs">My Jobs</nuxt-link>
+          <nuxt-link to="/jobs?profile_id=1&user_id=1">My Jobs</nuxt-link>
         </b-col>
       </b-row>
     </header>
