@@ -9,7 +9,7 @@
     "generate": "nuxt generate",
     "test": "jest",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "generate-deploy": "BACKEND_URL=\"ec2-52-26-31-177.us-west-2.compute.amazonaws.com\" SUBDIR=\"/Jobapplication-frontend/\" nuxt generate"
+    "generate-deploy": "BACKEND_URL=\"http://ec2-52-26-31-177.us-west-2.compute.amazonaws.com:8080\" SUBDIR=\"/Jobapplication-frontend/\" nuxt generate"
   },
   "dependencies": {
     "axios": "^0.26.1",
