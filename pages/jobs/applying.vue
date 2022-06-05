@@ -131,7 +131,7 @@
             <b-form-datepicker
               :id="'job-application-updated-date-tx' + index"
               :date-format-options="{ year: 'numeric', month: 'numeric', day: 'numeric' }"
-              v-model="jobApplication.updatedDate"
+              v-model="jobApplication.jobApplicationStatuses[0].date"
               class="mb-2"
               placeholder="Date"
             >
@@ -142,7 +142,7 @@
           <b-form-group>
             <b-form-input
               :id="'job-application-job-url-tx' + index"
-              v-model="jobApplication.latestStatus"
+              v-model="jobApplication.jobApplicationStatuses[0].status"
               placeholder="Latest status"
             />
           </b-form-group>
